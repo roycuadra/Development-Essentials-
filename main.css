@@ -24,7 +24,7 @@ ol {
     background: #ffffff; 
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 100px;
+    padding: 40px; /* Reduced padding for smaller screens */
     margin: 0 auto;
     max-width: 1000px; 
 }
@@ -47,4 +47,45 @@ ul {
 ul li {
     font-size: 1em; 
     color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Adjust heading size */
+    }
+
+    ol {
+        padding: 20px; /* Further reduce padding on smaller screens */
+    }
+
+    li {
+        margin-bottom: 15px; /* Reduce margin between list items */
+    }
+
+    p {
+        font-size: 0.9em; /* Adjust font size for paragraphs */
+    }
+
+    ul li {
+        font-size: 0.9em; /* Adjust font size for list items */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em; /* Further adjust heading size */
+    }
+
+    ol {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    p {
+        font-size: 0.8em; /* Further adjust font size */
+    }
+
+    ul li {
+        font-size: 0.8em; /* Further adjust list item font size */
+    }
 }
